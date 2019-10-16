@@ -9,7 +9,7 @@ export class Board extends React.Component {
         onClick={() => {
           this.props.onClick(n);
         }}
-        item={this.props.squares[n]}
+        item={this.props.items[n].square}
       />
     );
   }
