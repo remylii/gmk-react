@@ -1,17 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Board } from "./Board";
+import { Game } from "./Game";
 import "./style.css";
 
-class Game extends React.Component {
+class App extends React.Component {
   render() {
-    return (
-      <div>
-        <p>Game</p>
-        <Board />
-      </div>
-    );
+    return <Game />;
   }
 }
 
-ReactDOM.render(<Game />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
